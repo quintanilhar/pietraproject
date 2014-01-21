@@ -29,7 +29,7 @@ class SearchController extends Controller
         ));
 
         $this->render(
-            '/site/search',
+            '/search',
             array(
                 'pages' => $dataProvider,
                 'keyword' => $keyword

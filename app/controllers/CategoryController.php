@@ -17,15 +17,8 @@ class CategoryController extends Controller
 
         $this->pageTitle = $category->title;
 
-        $template = '/site/category';
-
-        switch ($category->category_id) {
-            case 1: $template = '/site/consultoria'; break;
-            case 2: $template = '/site/servicos'; break;
-        }
-
         $this->render(
-            $template,
+            '/category',
             array(
                 'category' => $category,
             )

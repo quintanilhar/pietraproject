@@ -7,8 +7,8 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Canviant',
-    'theme' => 'canviant',
+	'name'=>'Pietra Project',
+    'theme' => 'default',
     'sourceLanguage' => 'en_US',
     'language' =>'pt_BR',
 
@@ -38,7 +38,6 @@ return array(
             'mediaCachePath' => dirname(__FILE__).'/../../public/media/cache',
         ),
         'admin',
-        'blog'
 	),
 
 	// application components
@@ -62,9 +61,6 @@ return array(
                 'admin/' => 'admin/admin/index',
                 'contato/' => 'site/contact',
 
-                array(
-                    'class' => 'blog.components.BlogUrlRule',
-                ),
                 array(
                     'class' => 'pietra.components.DynamicUrlRule',
                 ),

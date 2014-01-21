@@ -18,7 +18,7 @@ class PageController extends Controller
         }
 
         $this->render(
-            'index',
+            '/page',
             array(
                 'page' => $page
             )
