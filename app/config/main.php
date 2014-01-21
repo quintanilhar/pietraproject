@@ -24,17 +24,16 @@ return array(
         'application.modules.blog.models.BlogConfig',
 	),
 
-	'modules'=>array(
-		'gii'=>array(
+    'modules'=>array(
+        /*'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'123',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1', '10.0.*.*'),
-        ),
+        ),*/
         'pietra' => array(
             'mediaUrl' => 'media/',
-            'mediaPath' => dirname(__FILE__).'/../../../web/site/media',
-            //'mediaPath' => dirname(__FILE__).'/../../public/media',
+            'mediaPath' => dirname(__FILE__).'/../../public/media',
             'mediaCacheUrl' => 'media/cache/',
             'mediaCachePath' => dirname(__FILE__).'/../../public/media/cache',
         ),
@@ -50,8 +49,7 @@ return array(
             'loginUrl' => array('admin/admin/index')
 		),
         'assetManager' => array(
-            //'basePath' => dirname(__FILE__). '/../../public/assets',
-            'basePath' => dirname(__FILE__). '/../../../web/site/assets',
+            'basePath' => dirname(__FILE__). '/../../public/assets',
             'linkAssets' => true,
         ),
 
@@ -73,20 +71,12 @@ return array(
 			),
 		),
 		'db'=>array(
-			'connectionString' => 'mysql:host=dbmy0041.whservidor.com;dbname=canviant_1',
+			'connectionString' => 'mysql:host=HOST;dbname=SCHEMA',
 			'emulatePrepare' => true,
-			'username' => 'canviant_1',
-			'password' => 'dbcanviant8',
+			'username' => 'user',
+			'password' => 'pass',
 			'charset' => 'utf8',
         ),
-        /*
-		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=pietra',
-			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => 'db249011',
-			'charset' => 'utf8',
-        ),*/
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
@@ -111,6 +101,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'contato@canviant.com.br'
+		'adminEmail'=>'xxxx@xxxx.com.br'
 	),
 );
